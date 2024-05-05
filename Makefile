@@ -1,8 +1,5 @@
 
-TARGET = src/*.go
-CMD = go
-BUILD_DIR = build/
+SOURCE = ./cmd/main.go
 
-default:
-	$(CMD) run $(TARGET)
-
+default: $(SOURCE)
+	go run $(SOURCE)
